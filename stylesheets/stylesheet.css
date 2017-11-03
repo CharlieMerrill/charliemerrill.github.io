@@ -1,26 +1,43 @@
 .jumbotron {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), url('../images/portfolio-banner.jpg');
+  background-image: url('../images/portfolio-banner2.png');
   background-repeat: no-repeat;
   background-position: relative;
   background-size: cover;
-  height: 400px;
+  height: 620px;
 }
 
 .jumbotron .container {
-  margin-top: 5%;
+  margin-top: 100px;
 }
 
 #name {
   text-align: right;
   border-right: 1px solid white;
   color: white;
-  text-shadow: 1px 1px 1px #7F7F7F;
+  text-shadow: 2px 2px 2px #333333;
+  padding-bottom: 100px;
+}
+
+#name h1 {
+  font-size: 80px;
 }
 
 #job {
+  padding-top: 100px;
   color: white;
-  text-shadow: 1px 1px 1px #7F7F7F;
+  text-shadow: 1px 1px 1px #333333;
   font-style: italic;
+}
+
+#job h2 {
+  font-size: 50px;
+}
+
+.first-section {
+  margin-top: -150px;
+  width: 80%;
+  color: white;
+  border-bottom: 3px solid white !important;
 }
 
 .section-title {
@@ -33,14 +50,50 @@
   font-size: 50px;
 }
 
+#triangle {
+  height: 0;
+  width: 0;
+  margin-left: -15px;
+  margin-top: -179px;
+  border-top: 180px solid transparent;
+  border-left: 100vw solid #4C4C4C;
+}
+
+#triangle2 {
+  height: 0;
+  width: 0;
+  border-bottom: 180px solid transparent;
+  border-left: 100vw solid #4C4C4C;
+}
+
+#triangle3 {
+  height: 0;
+  width: 0;
+  margin-top: -120px;
+  border-top: 180px solid transparent;
+  border-right: 100vw solid #4C4C4C;
+}
+
+#triangle4 {
+  height: 0;
+  width: 0;
+  border-bottom: 120px solid transparent;
+  border-right: 100vw solid #4C4C4C;
+}
+
+.projects-container {
+  background-color: #4C4C4C;
+  margin-top: -30px;
+}
+
 .text-right {
   text-align: right;
 }
 
 .project-card {
-  margin-top: 20px;
+  margin: 20px auto;
   border-radius: 8px;
-  width: 100%;
+  width: 90%;
 }
 
 .project-img {
@@ -53,12 +106,13 @@
 }
 
 .project-content {
-  border-top: 1px solid grey;
-  border-right: 1px solid grey;
-  border-bottom: 1px solid grey;
+  border-top: 1px solid white;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
   height: 215px;
+  background-color: white;
 }
 
 .project-title {
@@ -119,6 +173,12 @@
   text-decoration: none;
 }
 
+#education-title {
+  margin-top: -120px;
+  margin-left: 400px;
+  width: 60vw;
+}
+
 .education {
   margin-top: 20px;
 }
@@ -133,15 +193,36 @@
   margin-top: 10px;
 }
 
+.work-container {
+  background-color: #4C4C4C;
+  color: white;
+}
+
+#work-title {
+  border-bottom: 3px solid white;
+  text-align: right;
+  width: 65vw;
+  margin-left: 30vw;
+  margin-top: -160px;
+  margin-bottom: 70px;
+}
+
 .work {
   margin-top: 20px;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .work img {
   border-radius: 8px;
   height: 150px;
   width: 150px;
-  margin-left: 10px;
+  margin-left: 5vw;
+}
+
+.work-content {
+width: 50%;
 }
 
 .work-dates {
@@ -150,6 +231,12 @@
 
 .text-center {
   text-align: center;
+}
+
+.contact-title {
+  width: 50vw;
+  margin-top: -100px;
+  margin-left: -40px;
 }
 
 #contact-mail {

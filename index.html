@@ -13,32 +13,30 @@
   </head>
   <body>
     <div class="jumbotron">
-      <div class="container">
+      <div class="container" id="name-container">
         <div class="row">
           <div class="col-sm-7 col-xs-6" id="name">
             <h1>Charlie Merrill</h2>
-            <br>
-            <br>
           </div>
           <div class="col-sm-5 col-xs-6" id="job">
-            <br>
-            <br>
-            <br>
             <h2>web developer</h3>
           </div>
         </div>
       </div>
     </div>
-    <div class="container">
-      <div class="section-title">
+    <div class="container-fluid projects-container">
+      <div id="triangle"></div>
+      <div class="section-title first-section">
         <h2>Portfolio <br />Projects.</h2>
       </div>
+      <br>
+      <br>
       <div class="card project-card">
         <div class="row">
           <div class="col-sm-3 col-xs-12">
             <img src="images/hearsay.jpg" class="project-img hidden-xs" alt="HearSay Screenshot">
           </div>
-          <div class="col-sm-9 col-xs-12 project-content">
+          <div class="col-sm-9 col-xs-12 fluid project-content">
             <h3 class="project-title">HearSay</h3>
             <hr>
             <p class="project-words">HearSay is a Twitter-based game about celebrities. Users are presented with a tweet and four celebrities. They must then guess which celebrity they think wrote the tweet. Once logged in, users can appear on the leaderboard and connect with friends. HearSay was made using Ruby on Rails.</p>
@@ -51,7 +49,6 @@
           </div>
         </div>
       </div>
-      <br>
       <div class="card project-card">
         <div class="row">
           <div class="col-sm-3 col-xs-12">
@@ -71,10 +68,14 @@
         </div>
       </div>
     </div>
+    <div id="triangle2"></div>
     <div class="container">
-      <div class="section-title text-right">
+      <div class="section-title text-right" id="education-title">
         <h2>Educaction.</h2>
       </div>
+      <br>
+      <br>
+      <br>
       <div class="row education">
         <div class="row">
           <div class="col-xs-3">
@@ -120,7 +121,7 @@
           <div class="col-sm-6 col-xs-9">
             <h3>Code School</h3>
             <h5>Courses Completed:</h5>
-            <h6>Try Ruby, Ruby Bits, Rails for Zombies Redux, Rails for Zombies 2, Try SQL, The Sequel to SQL, Try jQuery, JavaScript Road Trip Parts 1 - 3, Front-end Foundations, Front-end Formations, CSS Cross Country, Try Git</h6>
+            <h6>Try Ruby, Ruby Bits, Rails for Zombies 1 - 2, Accelerating Through Angular, Try SQL, The Sequel to SQL, Try jQuery, JavaScript Road Trip Parts 1 - 3, Front-end Foundations and Formations, CSS Cross Country, Try Git</h6>
             <h5 class="hidden-sm hidden-md hidden-lg hidden-xl">Online</h5>
           </div>
           <div class="col-sm-3 hidden-xs edu-dates">
@@ -137,7 +138,7 @@
           <div class="col-sm-6 col-xs-9">
             <h3>Codecademy</h3>
             <h5>Courses Completed:</h5>
-            <h6>Learn Ruby, Learn Ruby on Rails, Introduction to jQuery, Learn Javascript, Make a Website</h6>
+            <h6>Learn Ruby, Learn Ruby on Rails, Introduction to jQuery, Learn Javascript, Make a Website, Learn HTML & CSS</h6>
             <h5 class="hidden-sm hidden-md hidden-lg hidden-xl">Online</h5>
           </div>
           <div class="col-sm-3 hidden-xs edu-dates">
@@ -154,7 +155,7 @@
           <div class="col-sm-6 col-xs-9">
             <h3>SoloLearn</h3>
             <h5>Courses Completed:</h5>
-            <h6>Ruby Tutorial, SQL Tutorial, JavaScript Tutorial, jQuery, Tutorial</h6>
+            <h6>Ruby Tutorial, SQL Tutorial, JavaScript Tutorial, jQuery Tutorial</h6>
             <h5 class="hidden-sm hidden-md hidden-lg hidden-xl">Online</h5>
           </div>
           <div class="col-sm-3 hidden-xs edu-dates">
@@ -162,74 +163,67 @@
           </div>
         </div>
       </div>
-      <hr>
+      <br>
     </div>
-    <div class="container">
-      <div class="section-title">
+    <div id="triangle3"></div>
+    <div class="container-fluid work-container">
+      <div class="section-title" id="work-title">
         <h2>Work <br />Experience.</h2>
       </div>
-      <div class="row work">
-        <div class="row">
-          <div class="col-xs-3">
-            <img src="images/loyola.jpg" alt="Loyola Logo">
-          </div>
-          <div class="col-sm-6 col-xs-9">
-            <h3>English Teacher</h3>
-            <h4>Colegio Salesianos Loyola</h4>
-            <h6>• Gave EFL classes to students aged 6 to 18 years old.<br />• Prepared students for Cambridge exams.</h6>
-            <h5 class="hidden-sm hidden-md hidden-lg hidden-xl">Aranjuez, Spain</h5>
-            <h5 class="hidden-sm hidden-md hidden-lg hidden-xl">Sep 2015 - Jun 2017</h5>
-          </div>
-          <div class="col-sm-3 hidden-xs work-dates">
-            <h5>Aranjuez, Spain</h5>
-            <h5>Sep 2015 - Jun 2017</h5>
-          </div>
+      <div class="work">
+        <div>
+          <img src="images/loyola.jpg" alt="Loyola Logo">
+        </div>
+        <div class="work-content">
+          <h3>English Teacher</h3>
+          <h4>Colegio Salesianos Loyola</h4>
+          <h6>• Gave EFL classes to students aged 6 to 18 years old.<br />• Prepared students for Cambridge exams.</h6>
+        </div>
+        <div>
+          <h5>Aranjuez, Spain</h5>
+          <h5>Sep 2015 - Jun 2017</h5>
         </div>
       </div>
       <hr>
-      <div class="row work">
-        <div class="row">
-          <div class="col-xs-3">
-            <img src="images/fairmail.png" alt="FairMail Logo">
-          </div>
-          <div class="col-sm-6 col-xs-9">
-            <h3>English and Photography Teacher</h3>
-            <h4>FairMail</h4>
-            <h6>• Taught photography, Adobe Photoshop and English to underprivileged youth.<br />• Facilitated the production of students’ photos into postcards. Profits from this help pay for their education and living expenses.<br />• Organized a photo exhibition of the students' photos.</h6>
-            <h5 class="hidden-sm hidden-md hidden-lg hidden-xl">Huanchaco, Peru</h5>
-            <h5 class="hidden-sm hidden-md hidden-lg hidden-xl">Nov 2014 - Mar 2015</h5>
-          </div>
-          <div class="col-sm-3 hidden-xs work-dates">
-            <h5>Huanchaco, Peru</h5>
-            <h5>Nov 2014 - Mar 2015</h5>
-          </div>
+      <div class="work">
+        <div>
+          <img src="images/fairmail.png" alt="FairMail Logo">
+        </div>
+        <div  class="work-content">
+          <h3>English and Photography Teacher</h3>
+          <h4>FairMail</h4>
+          <h6>• Taught photography, Adobe Photoshop and English to underprivileged youth.<br />• Facilitated the production of students’ photos into postcards. Profits from this help pay for their education and living expenses.<br />• Organized a photo exhibition of the students' photos.</h6>
+        </div>
+        <div>
+          <h5>Huanchaco, Peru</h5>
+          <h5>Nov 2014 - Mar 2015</h5>
         </div>
       </div>
       <hr>
-      <div class="row work">
-        <div class="row">
-          <div class="col-xs-3">
-            <img src="images/punt2.png" alt="Punt Tours Logo">
-          </div>
-          <div class="col-sm-6 col-xs-9">
-            <h3>Tour Guide</h3>
-            <h4>Punt Tours Melbourne</h4>
-            <h6>• Took customers on a tour around a lake in a classic Cambridge style punt and provided a commentary about Melbourne’s Royal Botanic Gardens.<br />• Scheduled standard tours and special events, such as weddings and birthday parties.<br />• Performed daily maintenance on the boats.<br />• Handled money transactions.</h6>
-            <h5 class="hidden-sm hidden-md hidden-lg hidden-xl">Melbourne, Australia</h5>
-            <h5 class="hidden-sm hidden-md hidden-lg hidden-xl">Oct 2013 - Mar 2014</h5>
-          </div>
-          <div class="col-sm-3 hidden-xs work-dates">
-            <h5>Melbourne, Australia</h5>
-            <h5>Oct 2013 - Mar 2014</h5>
-          </div>
+      <div class="work">
+        <div>
+          <img src="images/punt2.png" alt="Punt Tours Logo">
+        </div>
+        <div class="work-content">
+          <h3>Tour Guide</h3>
+          <h4>Punt Tours Melbourne</h4>
+          <h6>• Took customers on a tour around a lake in a classic Cambridge style punt and provided a commentary about Melbourne’s Royal Botanic Gardens.<br />• Organized standard tours and special events, such as weddings and birthday parties.<br />• Performed daily maintenance on the boats.</h6>
+        </div>
+        <div>
+          <h5>Melbourne, Australia</h5>
+          <h5>Oct 2013 - Mar 2014</h5>
         </div>
       </div>
-      <hr>
+      <br>
     </div>
+    <div id="triangle4"></div>
     <div class="container">
-      <div class="section-title text-right">
+      <div class="section-title contact-title">
         <h2>Contact.</h2>
       </div>
+      <br>
+      <br>
+      <br>
       <div class="row text-center">
         <div class="col-xs-12 col-sm-4">
           <a href="" id="contact-mail"><i class="fa fa-envelope" aria-hidden="true"></i></a>
@@ -242,5 +236,8 @@
         </div>
       </div>
     </div>
+    <br>
+    <br>
+    <br>
   </body>
 </html>
