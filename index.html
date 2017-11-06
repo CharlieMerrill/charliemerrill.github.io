@@ -77,8 +77,59 @@
                 <p class="project-words">HearSay is a Twitter-based game about celebrities. Users are presented with a tweet and four celebrities. They must then guess which celebrity they think wrote the tweet. Once logged in, users can appear on the leaderboard and connect with friends.</p>
                 <div class="row links">
                   <a href="http://www.hearsaythegame.com/" target="_blank" class="site-link"><i class="fa fa-television" aria-hidden="true"></i> Visit Website</a>
-                  <a href="#" class="pic-link"><i class="fa fa-camera" aria-hidden="true"></i> View Screenshots</a>
+                  <a onclick="openModal();currentSlide(1)" class="pic-link"><i class="fa fa-camera" aria-hidden="true"></i> View Screenshots</a>
                   <a href="https://github.com/timtud/HearSayTheGame" target="_blank" class="github-link"><i class="fa fa-github" aria-hidden="true"></i> View Code on Github</a>
+                </div>
+                <div id="myModal" class="modal">
+                  <span class="close cursor" onclick="closeModal()">&times;</span>
+                  <div class="modal-content">
+
+                    <div class="mySlides">
+                      <div class="numbertext">1 / 6</div>
+                      <div class="unique-caption">Landing Page</div>
+                      <img src="images/hearsay1.png" class="slider-image">
+                    </div>
+
+                    <div class="mySlides">
+                      <div class="numbertext">2 / 6</div>
+                      <div class="unique-caption">Gameplay</div>
+                      <img src="images/hearsay2.png" class="slider-image">
+                    </div>
+
+                    <div class="mySlides">
+                      <div class="numbertext">3 / 6</div>
+                      <div class="unique-caption">Gameplay</div>
+                      <img src="images/hearsay3.png" class="slider-image">
+                    </div>
+
+                    <div class="mySlides">
+                      <div class="numbertext">4 / 6</div>
+                      <div class="unique-caption">Results Page</div>
+                      <img src="images/hearsay4.png" class="slider-image">
+                    </div>
+
+                    <div class="mySlides">
+                      <div class="numbertext">5 / 6</div>
+                      <div class="unique-caption">Leaderboard</div>
+                      <img src="images/hearsay5.png" class="slider-image">
+                    </div>
+
+                    <div class="mySlides">
+                      <div class="numbertext">6 / 6</div>
+                      <div class="unique-caption">Profile Page</div>
+                      <img src="images/hearsay6.png" class="slider-image">
+                    </div>
+
+                    <div class="caption-container">
+                      <p id="caption">HearSay</p>
+                    </div>
+
+                    <div class="arrows">
+                      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+
+                  </div>
                 </div>
                 <br>
               </div>
@@ -100,6 +151,48 @@
                   <a href="https://reel-jobs.herokuapp.com/" target="_blank" class="site-link"><i class="fa fa-television" aria-hidden="true"></i> Visit Website</a>
                   <a href="#" class="pic-link"><i class="fa fa-camera" aria-hidden="true"></i> View Screenshots</a>
                   <a href="https://github.com/CharlieMerrill/Moleywood2" target="_blank" class="github-link"><i class="fa fa-github" aria-hidden="true"></i> View Code on Github</a>
+                </div>
+                <br>
+              </div>
+            </div>
+          </div>
+          <div class="card project-card">
+            <div class="row">
+              <div class="col-xs-12 project-top">
+                <img src="images/localweather.png" class="project-img" alt="HearSay Screenshot">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12 project-content">
+                <div class="arrow-down"></div>
+                <h3 class="project-title">Local Weather</h3>
+                <p class="language">jQuery</p>
+                <p class="project-words">Local Weather is a simple app that displays the weather in your local area. It uses the Open Weather Map API.</p>
+                <div class="row links">
+                  <a href="https://charliemerrill.github.io/local-weather/" target="_blank" class="site-link"><i class="fa fa-television" aria-hidden="true"></i> Visit Website</a>
+                  <a href="#" class="pic-link"><i class="fa fa-camera" aria-hidden="true"></i> View Screenshots</a>
+                  <a href="https://github.com/CharlieMerrill/local-weather" target="_blank" class="github-link"><i class="fa fa-github" aria-hidden="true"></i> View Code on Github</a>
+                </div>
+                <br>
+              </div>
+            </div>
+          </div>
+          <div class="card project-card">
+            <div class="row">
+              <div class="col-xs-12 project-top">
+                <img src="images/calculator.png" class="project-img" alt="HearSay Screenshot">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12 project-content">
+                <div class="arrow-down"></div>
+                <h3 class="project-title">Calculator</h3>
+                <p class="language">Javascript</p>
+                <p class="project-words">A simple calculator app made using Javascript.</p>
+                <div class="row links">
+                  <a href="https://charliemerrill.github.io/javascript-calculator/" target="_blank" class="site-link"><i class="fa fa-television" aria-hidden="true"></i> Visit Website</a>
+                  <a href="#" class="pic-link"><i class="fa fa-camera" aria-hidden="true"></i> View Screenshots</a>
+                  <a href="https://github.com/CharlieMerrill/javascript-calculator" target="_blank" class="github-link"><i class="fa fa-github" aria-hidden="true"></i> View Code on Github</a>
                 </div>
                 <br>
               </div>
@@ -285,6 +378,6 @@
       <br>
       <br>
     </div>
-
+  <script src="scripts/script.js"></script>
   </body>
 </html>
