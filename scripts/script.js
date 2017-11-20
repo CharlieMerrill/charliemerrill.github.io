@@ -1,16 +1,20 @@
-function openModal() {
-  document.getElementById('myModal').style.display = "block";
+function openModal(num) {
+  document.getElementById('myModal' + num).style.display = "block";
 }
 
-function closeModal() {
-  document.getElementById('myModal').style.display = "none";
+function closeModal(num) {
+  document.getElementById('myModal' + num).style.display = "none";
 }
 
 var slideIndex = 1;
 showSlides(slideIndex);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+function plusSlides(n, min, max) {
+  if(slideIndex != min && n < 0){
+    showSlides(slideIndex += n);
+  } else if(slideIndex != max && n > 0){
+    showSlides(slideIndex += n);
+  }
 }
 
 function currentSlide(n) {
