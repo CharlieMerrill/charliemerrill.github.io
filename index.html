@@ -74,14 +74,14 @@
                 <div class="arrow-down"></div>
                 <h3 class="project-title">HearSay</h3>
                 <p class="language">Ruby on Rails</p>
-                <p class="project-words">HearSay is a Twitter-based game about celebrities. Users are presented with a tweet and four celebrities. They must then guess which celebrity they think wrote the tweet. Once logged in, users can appear on the leaderboard and connect with friends.</p>
+                <p class="project-words">HearSay is a Twitter-based game about celebrities. Users are presented with a tweet and four celebrities from our database. They must then guess which celebrity they think wrote the tweet. Once logged in, users can appear on the leaderboard and connect with friends.</p>
                 <div class="row links">
                   <a href="http://www.hearsaythegame.com/" target="_blank" class="site-link"><i class="fa fa-television" aria-hidden="true"></i> Visit Website</a>
-                  <a onclick="openModal();currentSlide(1)" class="pic-link"><i class="fa fa-camera" aria-hidden="true"></i> View Screenshots</a>
+                  <a onclick="openModal(1);currentSlide(1)" class="pic-link"><i class="fa fa-camera" aria-hidden="true"></i> View Screenshots</a>
                   <a href="https://github.com/timtud/HearSayTheGame" target="_blank" class="github-link"><i class="fa fa-github" aria-hidden="true"></i> View Code on Github</a>
                 </div>
-                <div id="myModal" class="modal">
-                  <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div id="myModal1" class="modal">
+                  <span class="close cursor" onclick="closeModal(1)">&times;</span>
                   <div class="modal-content">
 
                     <div class="mySlides">
@@ -125,8 +125,8 @@
                     </div>
 
                     <div class="arrows">
-                      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                      <a class="prev" onclick="plusSlides(-1, 1, 6)">&#10094;</a>
+                      <a class="next" onclick="plusSlides(1, 1, 6)">&#10095;</a>
                     </div>
 
                   </div>
@@ -138,7 +138,7 @@
           <div class="card project-card">
             <div class="row">
               <div class="col-xs-12 project-top">
-                <img src="images/reeljobs.png" class="project-img" alt="HearSay Screenshot">
+                <img src="images/reeljobs.png" class="project-img" alt="Reel Jobs Screenshot">
               </div>
             </div>
             <div class="row">
@@ -147,10 +147,32 @@
                 <h3 class="project-title">Reel Jobs</h3>
                 <p class="language">Ruby on Rails</p>
                 <p class="project-words">Reel Jobs is designed to help local filmmakers gain experience and break into the film industry. Search for and apply to work on projects in your area that utilize your skill set. Or post a project and find the help you need to film your vision.</p>
+                <br>
                 <div class="row links">
                   <a href="https://reel-jobs.herokuapp.com/" target="_blank" class="site-link"><i class="fa fa-television" aria-hidden="true"></i> Visit Website</a>
-                  <a href="#" class="pic-link"><i class="fa fa-camera" aria-hidden="true"></i> View Screenshots</a>
+                  <a onclick="openModal(2);currentSlide(7)" class="pic-link"><i class="fa fa-camera" aria-hidden="true"></i> View Screenshots</a>
                   <a href="https://github.com/CharlieMerrill/Moleywood2" target="_blank" class="github-link"><i class="fa fa-github" aria-hidden="true"></i> View Code on Github</a>
+                </div>
+                <div id="myModal2" class="modal">
+                  <span class="close cursor" onclick="closeModal(2)">&times;</span>
+                  <div class="modal-content">
+
+                    <div class="mySlides">
+                      <div class="numbertext">1 / 1</div>
+                      <div class="unique-caption">Landing Page</div>
+                      <img src="images/reeljobs.png" class="slider-image">
+                    </div>
+
+                    <div class="caption-container">
+                      <p id="caption">Reel Jobs</p>
+                    </div>
+
+                    <div class="arrows">
+                      <a class="prev" onclick="plusSlides(-1, 1, 7)">&#10094;</a>
+                      <a class="next" onclick="plusSlides(1, 1, 7)">&#10095;</a>
+                    </div>
+
+                  </div>
                 </div>
                 <br>
               </div>
@@ -159,7 +181,69 @@
           <div class="card project-card">
             <div class="row">
               <div class="col-xs-12 project-top">
-                <img src="images/localweather.png" class="project-img" alt="HearSay Screenshot">
+                <img src="images/moviemoji.png" class="project-img" alt="HearSay Screenshot">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12 project-content">
+                <div class="arrow-down"></div>
+                <h3 class="project-title">Moviemoji</h3>
+                <p class="language">Angular</p>
+                <p class="project-words">Moviemoji is a trivia game. Users are presented with a group of emojis that describe either the plot or the title of a movie. They must then guess which movie it is.</p>
+                <br>
+                <br>
+                <div class="row links">
+                  <a href="https://charliemerrill.github.io/moviemoji/" target="_blank" class="site-link"><i class="fa fa-television" aria-hidden="true"></i> Visit Website</a>
+                  <a onclick="openModal(3);currentSlide(8)" class="pic-link"><i class="fa fa-camera" aria-hidden="true"></i> View Screenshots</a>
+                  <a href="https://github.com/CharlieMerrill/moviemoji" target="_blank" class="github-link"><i class="fa fa-github" aria-hidden="true"></i> View Code on Github</a>
+                </div>
+                <div id="myModal3" class="modal">
+                  <span class="close cursor" onclick="closeModal(3)">&times;</span>
+                  <div class="modal-content">
+
+                    <div class="mySlides">
+                      <div class="numbertext">1 / 4</div>
+                      <div class="unique-caption">Landing Page</div>
+                      <img src="images/moviemoji1.png" class="slider-image">
+                    </div>
+
+                    <div class="mySlides">
+                      <div class="numbertext">2 / 4</div>
+                      <div class="unique-caption">Gameplay</div>
+                      <img src="images/moviemoji2.png" class="slider-image">
+                    </div>
+
+                    <div class="mySlides">
+                      <div class="numbertext">3 / 4</div>
+                      <div class="unique-caption">Gameplay</div>
+                      <img src="images/moviemoji3.png" class="slider-image">
+                    </div>
+
+                    <div class="mySlides">
+                      <div class="numbertext">4 / 4</div>
+                      <div class="unique-caption">Results</div>
+                      <img src="images/moviemoji4.png" class="slider-image">
+                    </div>
+
+                    <div class="caption-container">
+                      <p id="caption">Moviemoji</p>
+                    </div>
+
+                    <div class="arrows">
+                      <a class="prev" onclick="plusSlides(-1, 8, 11)">&#10094;</a>
+                      <a class="next" onclick="plusSlides(1, 8, 11)">&#10095;</a>
+                    </div>
+
+                  </div>
+                </div>
+                <br>
+              </div>
+            </div>
+          </div>
+          <div class="card project-card">
+            <div class="row">
+              <div class="col-xs-12 project-top">
+                <img src="images/localweather.png" class="project-img" alt="Local Weather Screenshot">
               </div>
             </div>
             <div class="row">
@@ -170,8 +254,29 @@
                 <p class="project-words">Local Weather is a simple app that displays the weather in your local area. It uses the Open Weather Map API.</p>
                 <div class="row links">
                   <a href="https://charliemerrill.github.io/local-weather/" target="_blank" class="site-link"><i class="fa fa-television" aria-hidden="true"></i> Visit Website</a>
-                  <a href="#" class="pic-link"><i class="fa fa-camera" aria-hidden="true"></i> View Screenshots</a>
+                  <a onclick="openModal(4);currentSlide(12)" class="pic-link"><i class="fa fa-camera" aria-hidden="true"></i> View Screenshots</a>
                   <a href="https://github.com/CharlieMerrill/local-weather" target="_blank" class="github-link"><i class="fa fa-github" aria-hidden="true"></i> View Code on Github</a>
+                </div>
+                <div id="myModal4" class="modal">
+                  <span class="close cursor" onclick="closeModal(4)">&times;</span>
+                  <div class="modal-content">
+
+                    <div class="mySlides">
+                      <div class="numbertext">1 / 1</div>
+                      <div class="unique-caption">Weather Display</div>
+                      <img src="images/localweather1.png" class="slider-image">
+                    </div>
+
+                    <div class="caption-container">
+                      <p id="caption">Local Weather</p>
+                    </div>
+
+                    <div class="arrows">
+                      <a class="prev" onclick="plusSlides(-1, 12, 12)">&#10094;</a>
+                      <a class="next" onclick="plusSlides(1, 12, 12)">&#10095;</a>
+                    </div>
+
+                  </div>
                 </div>
                 <br>
               </div>
@@ -180,19 +285,41 @@
           <div class="card project-card">
             <div class="row">
               <div class="col-xs-12 project-top">
-                <img src="images/calculator.png" class="project-img" alt="HearSay Screenshot">
+                <img src="images/calculator.png" class="project-img" alt="Calculator Screenshot">
               </div>
             </div>
             <div class="row">
               <div class="col-xs-12 project-content">
                 <div class="arrow-down"></div>
                 <h3 class="project-title">Calculator</h3>
-                <p class="language">Javascript</p>
-                <p class="project-words">A simple calculator app made using Javascript.</p>
+                <p class="language">JavaScript</p>
+                <p class="project-words">A simple calculator app made using JavaScript.</p>
+                <br>
                 <div class="row links">
                   <a href="https://charliemerrill.github.io/javascript-calculator/" target="_blank" class="site-link"><i class="fa fa-television" aria-hidden="true"></i> Visit Website</a>
-                  <a href="#" class="pic-link"><i class="fa fa-camera" aria-hidden="true"></i> View Screenshots</a>
+                  <a onclick="openModal(5);currentSlide(13)" class="pic-link"><i class="fa fa-camera" aria-hidden="true"></i> View Screenshots</a>
                   <a href="https://github.com/CharlieMerrill/javascript-calculator" target="_blank" class="github-link"><i class="fa fa-github" aria-hidden="true"></i> View Code on Github</a>
+                </div>
+                <div id="myModal5" class="modal">
+                  <span class="close cursor" onclick="closeModal(5)">&times;</span>
+                  <div class="modal-content">
+
+                    <div class="mySlides">
+                      <div class="numbertext">1 / 1</div>
+                      <div class="unique-caption">Calculator Display</div>
+                      <img src="images/calculator1.png" class="slider-image">
+                    </div>
+
+                    <div class="caption-container">
+                      <p id="caption">Calculator</p>
+                    </div>
+
+                    <div class="arrows">
+                      <a class="prev" onclick="plusSlides(-1, 13, 13)">&#10094;</a>
+                      <a class="next" onclick="plusSlides(1, 13, 13)">&#10095;</a>
+                    </div>
+
+                  </div>
                 </div>
                 <br>
               </div>
@@ -278,23 +405,7 @@
             </div>
           </div>
         </div>
-        <hr>
-        <div class="row education-row">
-          <div class="row">
-            <div class="col-xs-3">
-              <img src="images/sololearn.jpg" alt="SoloLearn Logo">
-            </div>
-            <div class="col-sm-6 col-xs-9">
-              <h3>SoloLearn</h3>
-              <h5 class="hidden-sm hidden-md hidden-lg hidden-xl">Online</h5>
-              <h5>Courses Completed:</h5>
-              <h6 id="sololearn-margin">Ruby Tutorial, SQL Tutorial, JavaScript Tutorial, jQuery Tutorial</h6>
-            </div>
-            <div class="col-sm-3 hidden-xs edu-dates">
-              <h5>Online</h5>
-            </div>
-          </div>
-        </div>
+        <br>
         <br>
       </div>
       <div id="triangle3"></div>
