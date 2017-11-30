@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Charlie Merrill">
+    <title>Charlie Merrill</title>
+    <link rel="stylesheet" type="text/css" href="./stylesheets/stylesheet.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <div class="navbar navbar-fixed-top">
+      <!-- Logo -->
+      <a href="#top" class="navbar-brand">
+        <h5 id="C">C</h5>
+        <h5 id="M">M</h5>
+      </a>
+
+      <!-- Right Navigation -->
+      <div class="navbar-right hidden-xs hidden-sm">
+        <a href="#project-samples" class="navbar-item navbar-link">Projects</a>
+        <a href="#education" class="navbar-item navbar-link">Education</a>
+        <a href="#work-experience" class="navbar-item navbar-link">Experience</a>
+        <a href="#contact" class="navbar-item navbar-link">Contact</a>
+      </div>
+
+      <!-- Dropdown appearing on mobile only -->
+      <div class="navbar-item hidden-md hidden-lg">
+        <div class="dropdown">
+          <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
+          <ul class="dropdown-menu dropdown-menu-right navbar-dropdown-menu">
+            <li><a href="#projects-samples">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#work-experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="jumbotron">
+        <div class="container" id="home">
+          <div class="row">
+            <div class="col-sm-6 col-xs-6" id="name">
+              <h1>Charlie Merrill</h2>
+            </div>
+            <div class="col-sm-6 col-xs-6" id="job">
+              <h2>web developer</h3>
+            </div>
+          </div>
+        </div>
+        <div id="project-samples"></div>
+      </div>
+      <div class="container-fluid projects-container">
+        <div id="triangle"></div>
+        <div class="section-title" id="projects">
+          <h2>Portfolio <br />Projects.</h2>
+        </div>
+        <br>
+        <br>
+        <div class="project-card-container">
+          <div class="card project-card">
+            <div class="row">
+              <div class="col-xs-12 project-top">
+                <img src="images/hearsay.png" class="project-img" alt="HearSay Screenshot">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12 project-content">
+                <div class="arrow-down"></div>
+                <h3 class="project-title">HearSay</h3>
+                <p class="language">Ruby on Rails</p>
+                <p class="project-words">HearSay is a Twitter-based game about celebrities. Users are presented with a tweet and four celebrities from our database. They must then guess which celebrity they think wrote the tweet. Once logged in, users can appear on the leaderboard and connect with friends.</p>
+                <div class="row links">
+                  <a href="http://www.hearsaythegame.com/" target="_blank" class="site-link"><i class="fa fa-television" aria-hidden="true"></i> Visit Website</a>
+                  <a onclick="openModal(1);currentSlide(1)" class="pic-link"><i class="fa fa-camera" aria-hidden="true"></i> View Screenshots</a>
+                  <a href="https://github.com/timtud/HearSayTheGame" target="_blank" class="github-link"><i class="fa fa-github" aria-hidden="true"></i> View Code on Github</a>
+                </div>
+                <div id="myModal1" class="modal">
+                  <span class="close cursor" onclick="closeModal(1)">&times;</span>
+                  <div class="modal-content">
+
+                    <div class="mySlides">
+                      <div class="numbertext">1 / 6</div>
+                      <div class="unique-caption">Landing Page</div>
+                      <img src="images/hearsay1.png" class="slider-image">
+                    </div>
+
+                    <div class="mySlides">
+                      <div class="numbertext">2 / 6</div>
+                      <div class="unique-caption">Gameplay</div>
+                      <img src="images/hearsay2.png" class="slider-image">
+                    </div>
+
+                    <div class="mySlides">
+                      <div class="numbertext">3 / 6</div>
+                      <div class="unique-caption">Gameplay</div>
+                      <img src="images/hearsay3.png" class="slider-image">
+                    </div>
+
+                    <div class="mySlides">
+                      <div class="numbertext">4 / 6</div>
+                      <div class="unique-caption">Results Page</div>
+                      <img src="images/hearsay4.png" class="slider-image">
+                    </div>
+
+                    <div class="mySlides">
+                      <div class="numbertext">5 / 6</div>
+                      <div class="unique-caption">Leaderboard</div>
+                      <img src="images/hearsay5.png" class="slider-image">
+                    </div>
+
+                    <div class="mySlides">
+                      <div class="numbertext">6 / 6</div>
+                      <div class="unique-caption">Profile Page</div>
+                      <img src="images/hearsay6.png" class="slider-image">
+                    </div>
+
+                    <div class="caption-container">
+                      <p id="caption">HearSay</p>
+                    </div>
+
+                    <div class="arrows">
+                      <a class="prev" onclick="plusSlides(-1, 1, 6)">&#10094;</a>
+                      <a class="next" onclick="plusSlides(1, 1, 6)">&#10095;</a>
+                    </div>
+
+                  </div>
+                </div>
+                <br>
+              </div>
+            </div>
+          </div>
+          <div class="card project-card">
+            <div class="row">
+              <div class="col-xs-12 project-top">
+                <img src="images/reeljobs.png" class="project-img" alt="Reel Jobs Screenshot">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12 project-content">
+                <div class="arrow-down"></div>
+                <h3 class="project-title">Reel Jobs</h3>
+                <p class="language">Ruby on Rails</p>
+                <p class="project-words">Reel Jobs is designed to help local filmmakers gain experience and break into the film industry. Search for and apply to work on projects in your area that utilize your skill set. Or post a project and find the help you need to film your vision.</p>
+                <br>
+                <div class="row links">
+                  <a href="https://reel-jobs.herokuapp.com/" target="_blank" class="site-link"><i class="fa fa-television" aria-hidden="true"></i> Visit Website</a>
+                  <a onclick="openModal(2);currentSlide(7)" class="pic-link"><i class="fa fa-camera" aria-hidden="true"></i> View Screenshots</a>
+                  <a href="https://github.com/CharlieMerrill/Moleywood2" target="_blank" class="github-link"><i class="fa fa-github" aria-hidden="true"></i> View Code on Github</a>
+                </div>
+                <div id="myModal2" class="modal">
+                  <span class="close cursor" onclick="closeModal(2)">&times;</span>
+                  <div class="modal-content">
+
+                    <div class="mySlides">
+                      <div class="numbertext">1 / 5</div>
+                      <div class="unique-caption">Landing Page</div>
+                      <img src="images/reeljobs1.png" class="slider-image">
+                    </div>
+
+                    <div class="mySlides">
+                      <div class="numbertext">2 / 5</div>
+                      <div class="unique-caption">Search Results</div>
+                      <img src="images/reeljobs2.png" class="slider-image">
+                    </div>
+
+                    <div class="mySlides">
+                      <div class="numbertext">3 / 5</div>
+                      <div class="unique-caption">Project Page</div>
+                      <img src="images/reeljobs3.png" class="slider-image">
+                    </div>
+
+                    <div class="mySlides">
+                      <div class="numbertext">4 / 5</div>
+                      <div class="unique-caption">Profile Page</div>
+                      <img src="images/reeljobs4.png" class="slider-image">
+                    </div>
+
+                    <div class="mySlides">
+                      <div class="numbertext">5 / 5</div>
+                      <div class="unique-caption">View Applications</div>
+                      <img src="images/reeljobs5.png" class="slider-image">
+                    </div>
+
+                    <div class="caption-container">
+                      <p id="caption">Reel Jobs</p>
+                    </div>
+
+                    <div class="arrows">
+                      <a class="prev" onclick="plusSlides(-1, 7, 11)">&#10094;</a>
+                      <a class="next" onclick="plusSlides(1, 7, 11)">&#10095;</a>
+                    </div>
+
+                  </div>
+                </div>
+                <br>
+              </div>
+            </div>
+          </div>
+          <div class="card project-card">
+            <div class="row">
+              <div class="col-xs-12 project-top">
+                <img src="images/moviemoji.png" class="project-img" alt="HearSay Screenshot">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12 project-content">
+                <div class="arrow-down"></div>
+                <h3 class="project-title">Moviemoji</h3>
+                <p class="language">Angular</p>
+                <p class="project-words">Moviemoji is a trivia game. Users are presented with a group of emojis that describe either the plot or the title of a movie. They must then guess which movie it is.</p>
+                <br>
+                <br>
+                <div class="row links">
+                  <a href="https://charliemerrill.github.io/moviemoji/" target="_blank" class="site-link"><i class="fa fa-television" aria-hidden="true"></i> Visit Website</a>
+                  <a onclick="openModal(3);currentSlide(12)" class="pic-link"><i class="fa fa-camera" aria-hidden="true"></i> View Screenshots</a>
+                  <a href="https://github.com/CharlieMerrill/moviemoji" target="_blank" class="github-link"><i class="fa fa-github" aria-hidden="true"></i> View Code on Github</a>
+                </div>
+                <div id="myModal3" class="modal">
+                  <span class="close cursor" onclick="closeModal(3)">&times;</span>
+                  <div class="modal-content">
+
+                    <div class="mySlides">
+                      <div class="numbertext">1 / 4</div>
+                      <div class="unique-caption">Landing Page</div>
+                      <img src="images/moviemoji1.png" class="slider-image">
+                    </div>
+
+                    <div class="mySlides">
+                      <div class="numbertext">2 / 4</div>
+                      <div class="unique-caption">Gameplay</div>
+                      <img src="images/moviemoji2.png" class="slider-image">
+                    </div>
+
+                    <div class="mySlides">
+                      <div class="numbertext">3 / 4</div>
+                      <div class="unique-caption">Gameplay</div>
+                      <img src="images/moviemoji3.png" class="slider-image">
+                    </div>
+
+                    <div class="mySlides">
+                      <div class="numbertext">4 / 4</div>
+                      <div class="unique-caption">Results</div>
+                      <img src="images/moviemoji4.png" class="slider-image">
+                    </div>
+
+                    <div class="caption-container">
+                      <p id="caption">Moviemoji</p>
+                    </div>
+
+                    <div class="arrows">
+                      <a class="prev" onclick="plusSlides(-1, 12, 15)">&#10094;</a>
+                      <a class="next" onclick="plusSlides(1, 12, 15)">&#10095;</a>
+                    </div>
+
+                  </div>
+                </div>
+                <br>
+              </div>
+            </div>
+          </div>
+          <div class="card project-card">
+            <div class="row">
+              <div class="col-xs-12 project-top">
+                <img src="images/localweather.png" class="project-img" alt="Local Weather Screenshot">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12 project-content">
+                <div class="arrow-down"></div>
+                <h3 class="project-title">Local Weather</h3>
+                <p class="language">jQuery</p>
+                <p class="project-words">Local Weather is a simple app that displays the weather in your local area. It uses the Open Weather Map API.</p>
+                <div class="row links">
+                  <a href="https://charliemerrill.github.io/local-weather/" target="_blank" class="site-link"><i class="fa fa-television" aria-hidden="true"></i> Visit Website</a>
+                  <a onclick="openModal(4);currentSlide(16)" class="pic-link"><i class="fa fa-camera" aria-hidden="true"></i> View Screenshots</a>
+                  <a href="https://github.com/CharlieMerrill/local-weather" target="_blank" class="github-link"><i class="fa fa-github" aria-hidden="true"></i> View Code on Github</a>
+                </div>
+                <div id="myModal4" class="modal">
+                  <span class="close cursor" onclick="closeModal(4)">&times;</span>
+                  <div class="modal-content">
+
+                    <div class="mySlides">
+                      <div class="numbertext">1 / 2</div>
+                      <div class="unique-caption">Weather Display</div>
+                      <img src="images/localweather1.png" class="slider-image">
+                    </div>
+
+                    <div class="mySlides">
+                      <div class="numbertext">2 / 2</div>
+                      <div class="unique-caption">Weather Display</div>
+                      <img src="images/localweather2.png" class="slider-image">
+                    </div>
+
+                    <div class="caption-container">
+                      <p id="caption">Local Weather</p>
+                    </div>
+
+                    <div class="arrows">
+                      <a class="prev" onclick="plusSlides(-1, 16, 17)">&#10094;</a>
+                      <a class="next" onclick="plusSlides(1, 16, 17)">&#10095;</a>
+                    </div>
+
+                  </div>
+                </div>
+                <br>
+              </div>
+            </div>
+          </div>
+          <div class="card project-card">
+            <div class="row">
+              <div class="col-xs-12 project-top">
+                <img src="images/calculator.png" class="project-img" alt="Calculator Screenshot">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12 project-content">
+                <div class="arrow-down"></div>
+                <h3 class="project-title">Calculator</h3>
+                <p class="language">JavaScript</p>
+                <p class="project-words">A simple calculator app made using JavaScript.</p>
+                <br>
+                <div class="row links">
+                  <a href="https://charliemerrill.github.io/javascript-calculator/" target="_blank" class="site-link"><i class="fa fa-television" aria-hidden="true"></i> Visit Website</a>
+                  <a onclick="openModal(5);currentSlide(18)" class="pic-link"><i class="fa fa-camera" aria-hidden="true"></i> View Screenshots</a>
+                  <a href="https://github.com/CharlieMerrill/javascript-calculator" target="_blank" class="github-link"><i class="fa fa-github" aria-hidden="true"></i> View Code on Github</a>
+                </div>
+                <div id="myModal5" class="modal">
+                  <span class="close cursor" onclick="closeModal(5)">&times;</span>
+                  <div class="modal-content">
+
+                    <div class="mySlides">
+                      <div class="numbertext">1 / 1</div>
+                      <div class="unique-caption">Calculator Display</div>
+                      <img src="images/calculator1.png" class="slider-image">
+                    </div>
+
+                    <div class="caption-container">
+                      <p id="caption">Calculator</p>
+                    </div>
+
+                    <div class="arrows">
+                      <a class="prev" onclick="plusSlides(-1, 18, 18)">&#10094;</a>
+                      <a class="next" onclick="plusSlides(1, 18, 18)">&#10095;</a>
+                    </div>
+
+                  </div>
+                </div>
+                <br>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="education"></div>
+      <div id="triangle2"></div>
+      <div class="container">
+        <div class="section-title text-right" id="education-text">
+          <h2>Educaction.</h2>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="row education-row">
+          <div class="row">
+            <div class="col-xs-3">
+              <img src="images/depaul.jpg" alt="DePaul Logo">
+            </div>
+            <div class="col-sm-6 col-xs-9">
+              <h3>DePaul University</h3>
+              <h4>Bachelor of Sciences</h4>
+              <h5>Digital Cinema</h5>
+              <h5 class="hidden-sm hidden-md hidden-lg hidden-xl">Chicago, USA</h5>
+              <h5 class="hidden-sm hidden-md hidden-lg hidden-xl">2009 - 2013</h5>
+            </div>
+            <div class="col-sm-3 hidden-xs edu-dates">
+              <h5>Chicago, USA</h5>
+              <h5>2009 - 2013</h5>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="row education-row">
+          <div class="row">
+            <div class="col-xs-3">
+              <img src="images/lewagon.png" alt="Le Wagon Logo">
+            </div>
+            <div class="col-sm-6 col-xs-9">
+              <h3>Le Wagon</h3>
+              <h4>Coding School</h4>
+              <h5 class="hidden-sm hidden-md hidden-lg hidden-xl">Lisbon, Portugal</h5>
+              <h5 class="hidden-sm hidden-md hidden-lg hidden-xl">Jul 2017 - Sep 2017</h5>
+              <h6>9-week full-stack web development course, which taught Ruby on Rails, SQL, JavaScript, jQuery, HTML, CSS, Bootstrap, startup entrepreneurship, database management, and team workflow.</h6>
+            </div>
+            <div class="col-sm-3 hidden-xs edu-dates">
+              <h5>Lisbon, Portugal</h5>
+              <h5>Jul 2017 - Sep 2017</h5>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="row education-row">
+          <div class="row">
+            <div class="col-xs-3">
+              <img src="images/codeschool.png" alt="Code School Logo">
+            </div>
+            <div class="col-sm-6 col-xs-9">
+              <h3>Code School</h3>
+              <h5 class="hidden-sm hidden-md hidden-lg hidden-xl">Online</h5>
+              <h5>Courses Completed:</h5>
+              <h6>Try Ruby, Ruby Bits, Rails for Zombies 1 - 2, Accelerating Through Angular, Try SQL, The Sequel to SQL, Try jQuery, JavaScript Road Trip Parts 1 - 3, Front-end Foundations and Formations, CSS Cross Country, Try Git</h6>
+            </div>
+            <div class="col-sm-3 hidden-xs edu-dates">
+              <h5>Online</h5>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="row education-row">
+          <div class="row">
+            <div class="col-xs-3">
+              <img src="images/codecademy.png" alt="Codecademy Logo">
+            </div>
+            <div class="col-sm-6 col-xs-9">
+              <h3>Codecademy</h3>
+              <h5 class="hidden-sm hidden-md hidden-lg hidden-xl">Online</h5>
+              <h5>Courses Completed:</h5>
+              <h6>Learn Ruby, Learn Ruby on Rails, Learn AngularJS 1.X, Introduction to jQuery, Learn Javascript, Make a Website, Learn HTML & CSS</h6>
+            </div>
+            <div class="col-sm-3 hidden-xs edu-dates">
+              <h5>Online</h5>
+            </div>
+          </div>
+        </div>
+        <div id="work-experience"></div>
+        <br>
+        <br>
+      </div>
+      <div id="triangle3"></div>
+      <div class="container-fluid work-container">
+        <div class="section-title" id="experience">
+          <h2>Work <br />Experience.</h2>
+        </div>
+        <div class="work fluid">
+          <div>
+            <img src="images/loyola.jpg" alt="Loyola Logo">
+          </div>
+          <div class="work-content">
+            <h3>English Teacher</h3>
+            <h4>Colegio Salesianos Loyola</h4>
+            <h5 class="hidden-sm hidden-md hidden-lg hidden-xl">Aranjuez, Spain</h5>
+            <h5 class="hidden-sm hidden-md hidden-lg hidden-xl">Sep 2015 - Jun 2017</h5>
+            <h6>• Gave EFL classes to students aged 6 to 18 years old.<br />• Prepared students for Cambridge exams.</h6>
+          </div>
+          <div class="hidden-xs">
+            <h5>Aranjuez, Spain</h5>
+            <h5>Sep 2015 - Jun 2017</h5>
+          </div>
+        </div>
+        <hr>
+        <div class="work">
+          <div>
+            <img src="images/fairmail.png" alt="FairMail Logo">
+          </div>
+          <div  class="work-content">
+            <h3>English and Photography Teacher</h3>
+            <h4>FairMail</h4>
+            <h5 class="hidden-sm hidden-md hidden-lg hidden-xl">Huanchaco, Peru</h5>
+            <h5 class="hidden-sm hidden-md hidden-lg hidden-xl">Nov 2014 - Mar 2015</h5>
+            <h6>• Taught photography, Adobe Photoshop and English to underprivileged youth.<br />• Facilitated the production of students’ photos into postcards. Profits from this help pay for their education and living expenses.<br />• Organized a photo exhibition of the students' photos.</h6>
+          </div>
+          <div class="hidden-xs">
+            <h5>Huanchaco, Peru</h5>
+            <h5>Nov 2014 - Mar 2015</h5>
+          </div>
+        </div>
+        <hr>
+        <div class="work">
+          <div>
+            <img src="images/punt2.png" alt="Punt Tours Logo">
+          </div>
+          <div class="work-content">
+            <h3>Tour Guide</h3>
+            <h4>Punt Tours Melbourne</h4>
+            <h5 class="hidden-sm hidden-md hidden-lg hidden-xl">Melbourne, Australia</h5>
+            <h5 class="hidden-sm hidden-md hidden-lg hidden-xl">Oct 2013 - Mar 2014</h5>
+            <h6>• Took customers on a tour around a lake in a classic Cambridge style punt and provided a commentary about Melbourne’s Royal Botanic Gardens.<br />• Organized standard tours and special events, such as weddings and birthday parties.<br />• Performed daily maintenance on the boats.</h6>
+          </div>
+          <div class="hidden-xs">
+            <h5>Melbourne, Australia</h5>
+            <h5>Oct 2013 - Mar 2014</h5>
+          </div>
+        </div>
+        <br>
+      </div>
+      <div id="triangle4"></div>
+      <div class="container">
+        <div class="section-title" id="contact">
+          <h2>Contact.</h2>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="row text-center">
+          <div class="col-xs-12 col-sm-4">
+            <div id="contact-mail">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <h5 id="email">fcharliemerrill@gmail.com</h5>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <a href="https://www.linkedin.com/in/charlie-merrill-428487b5/" target="_blank" id="contact-linkedin"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <a href="https://github.com/CharlieMerrill" target="_blank" id="contact-github"><i class="fa fa-github-square" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>
+    </div>
+  <script src="scripts/script.js"></script>
+  </body>
+</html>
