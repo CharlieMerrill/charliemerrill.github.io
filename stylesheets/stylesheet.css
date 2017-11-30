@@ -144,7 +144,7 @@
 
 .section-title {
   font-family: Verdana, san-serif;
-  border-bottom: 3px solid black;
+  border-bottom: 3px solid #4C4C4C;
 }
 
 .section-title h2 {
@@ -433,14 +433,16 @@
 }
 
 /* Education Section */
-#education {
+#education-text {
   margin-top: -118px;
   margin-left: 27.5vw;
   width: 59vw;
+  color: #4C4C4C;
 }
 
 .education-row {
   margin-top: 20px;
+  color: #4C4C4C;
 }
 
 .education-row img {
@@ -451,6 +453,7 @@
 
 .edu-dates {
   margin-top: 10px;
+  color: #4C4C4C;
 }
 
 #sololearn-margin {
@@ -505,6 +508,7 @@ width: 50%;
   text-align: right;
   margin-top: -140px;
   margin-left: 36vw;
+  color: #4C4C4C;
 }
 
 #contact-mail {
@@ -538,6 +542,11 @@ width: 50%;
 #contact-github:hover {
   color: #262626;
   text-shadow: 3px 3px 6px #7F7F7F;
+}
+
+#email {
+  text-shadow: none;
+  color: #4C4C4C;
 }
 
 /* Media Query */
