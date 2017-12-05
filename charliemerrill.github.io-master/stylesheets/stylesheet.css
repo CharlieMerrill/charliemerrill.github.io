@@ -107,7 +107,7 @@
 
 /* Top Display */
 .jumbotron {
-  background-image: url('../images/portfolio-banner2.png');
+  background-image: url('../images/portfolio-banner3.jpeg');
   background-repeat: no-repeat;
   background-position: relative;
   background-size: cover;
@@ -299,6 +299,7 @@
   background-color: #35AEF2;
   color: white;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .github-link {
@@ -517,6 +518,11 @@ width: 50%;
   text-shadow: 2px 2px 2px #999999;
 }
 
+#email {
+  text-shadow: none;
+  color: #4C4C4C;
+}
+
 #contact-mail:hover {
   color: #1B267E;
   text-shadow: 3px 3px 6px #7F7F7F;
@@ -542,11 +548,6 @@ width: 50%;
 #contact-github:hover {
   color: #262626;
   text-shadow: 3px 3px 6px #7F7F7F;
-}
-
-#email {
-  text-shadow: none;
-  color: #4C4C4C;
 }
 
 /* Media Query */
