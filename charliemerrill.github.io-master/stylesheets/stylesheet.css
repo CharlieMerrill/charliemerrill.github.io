@@ -107,7 +107,7 @@
 
 /* Top Display */
 .jumbotron {
-  background-image: url('../images/portfolio-banner2.png');
+  background-image: url('../images/portfolio-banner3.jpeg');
   background-repeat: no-repeat;
   background-position: relative;
   background-size: cover;
@@ -299,6 +299,7 @@
   background-color: #35AEF2;
   color: white;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .github-link {
