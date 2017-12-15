@@ -515,34 +515,31 @@ width: 50%;
 #contact-mail {
   color: #243CBA;
   font-size: 70px;
-  text-shadow: 2px 2px 2px #999999;
+  text-shadow: 1px 1px 1px #999999;
 }
 
 #contact-mail:hover {
   color: #1B267E;
-  text-shadow: 3px 3px 6px #7F7F7F;
 }
 
 #contact-linkedin {
   color: #35AEF2;
   font-size: 70px;
-  text-shadow: 2px 2px 2px #999999;
+  text-shadow: 1px 1px 1px #999999;
 }
 
 #contact-linkedin:hover {
   color: #2A88BD;
-  text-shadow: 3px 3px 6px #7F7F7F;
 }
 
 #contact-github {
   color: black;
   font-size: 70px;
-  text-shadow: 2px 2px 2px #999999;
+  text-shadow: 1px 1px 1px #999999;
 }
 
 #contact-github:hover {
-  color: #262626;
-  text-shadow: 3px 3px 6px #7F7F7F;
+  color: #383838;
 }
 
 #email {
